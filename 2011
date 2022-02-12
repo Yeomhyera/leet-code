@@ -1,8 +1,13 @@
 class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int ans = 0;
-        for (final String oper : operations){
-            ans += oper.charAt(1) == '+' ? 1 : -1;   
+        for (String op : operations){
+            if(op.charAt(1) == '+'){ // X의 증감연산이 + 일 경우
+                ans++;
+            }
+            else{
+                ans--;
+            }
         }
         return ans;
 
