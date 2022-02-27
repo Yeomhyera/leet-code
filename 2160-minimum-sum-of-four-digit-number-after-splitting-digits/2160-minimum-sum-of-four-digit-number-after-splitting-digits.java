@@ -2,7 +2,7 @@ class Solution {
     public int minimumSum(int num) {
         int[] number = new int[4];
         int i = 0;
-        while(num > 0){
+        while(num > 0){// num의 1의 자리수 나눠 배열에 대입하기
             number[i] = num%10;
             num /= 10;
             i++;
