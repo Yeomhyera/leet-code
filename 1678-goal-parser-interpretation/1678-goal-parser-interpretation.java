@@ -5,7 +5,7 @@ class Solution {
             if(command.charAt(i)=='G'){
                 answer+='G';
             }else{
-                if(command.charAt(i)=='('&&command.charAt(i+1)==')'){
+                if(command.charAt(i+1)==')'){
                     answer+='o';
                     i++;
                 }else{
