@@ -14,8 +14,8 @@
  * }
  */
 class Solution {
-	 int answer=0;
 	 public int rangeSumBST(TreeNode root, int L, int R) {
+		 int answer=0;
 		 if(root!=null) {
 			 if(root.val>=L && root.val <= R){
 				 answer+=root.val;   
