@@ -18,11 +18,11 @@ class Solution {
 	 public int rangeSumBST(TreeNode root, int L, int R) {
 		 if(root!=null) {
 			 if(root.val>=L && root.val <= R){
-                 answer+=root.val;   
-             }
-             rangeSumBST(root.left,L,R);
-             rangeSumBST(root.right,L,R);
+				 answer+=root.val;   
+			 }
+			 rangeSumBST(root.left,L,R);
+			 rangeSumBST(root.right,L,R);
 		 }
 		 return answer;
-	    }
+	 }
 }
