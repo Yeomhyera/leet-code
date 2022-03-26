@@ -10,6 +10,7 @@ class Solution {
                 }
             }
         }
-        return words.length-count;
+        int answer=words.length-count;
+        return answer;
     }
 }
