@@ -3,22 +3,23 @@ class Solution {
         int r[] = new int[10];
         int g[] = new int[10];
         int b[] = new int[10];
-        boolean had[] = new boolean[10];
+        boolean temp[] = new boolean[10];
         int answer = 0;
-        int num = 0;
+        int n = 0;
         
         for(int i = 0; i<rings.length()-1; i+=2) {
-            num = rings.charAt(i+1) - '0';
+            n = rings.charAt(i+1) - '0';
             if(rings.charAt(i) == 'R') {
-                r[num]++;                
+                r[n]++;                
             }else if(rings.charAt(i) == 'G') {
-                g[num]++;
+                g[n]++;
             }else if(rings.charAt(i) == 'B') {
-                b[num]++;
+                b[n]++;
             }
-            if(r[num]>0 && g[num]>0 && b[num]>0 && !had[num]) {
+      
+            if(r[n]>0 && g[n]>0 && b[n]>0 && !temp[n]) {
                 answer++;
-                had[num] = true;
+                temp[n] = true;
             }
         }
         return answer;
