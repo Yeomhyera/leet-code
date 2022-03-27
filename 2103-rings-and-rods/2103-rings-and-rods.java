@@ -8,7 +8,7 @@ class Solution {
         int n = 0;
         
         for(int i = 0; i<rings.length()-1; i+=2) {
-            n = rings.charAt(i+1) - '0';
+            n = rings.charAt(i+1) - '0';    //아스키코드 값 맞춰주기
             if(rings.charAt(i) == 'R') {
                 r[n]++;                
             }else if(rings.charAt(i) == 'G') {
